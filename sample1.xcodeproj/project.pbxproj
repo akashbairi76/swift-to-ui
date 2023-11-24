@@ -13,6 +13,12 @@
 		59AF81E12B0DAA8D0031FD3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59AF81DF2B0DAA8D0031FD3C /* Main.storyboard */; };
 		59AF81E32B0DAA900031FD3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59AF81E22B0DAA900031FD3C /* Assets.xcassets */; };
 		59AF81E62B0DAA900031FD3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59AF81E42B0DAA900031FD3C /* LaunchScreen.storyboard */; };
+		59AF82002B0DC50D0031FD3C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AF81FF2B0DC50D0031FD3C /* DetailViewController.swift */; };
+		59AF82072B0E7C720031FD3C /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AF82062B0E7C720031FD3C /* HomeScreen.swift */; };
+		59AF82092B0E7DF50031FD3C /* TextfieldRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AF82082B0E7DF50031FD3C /* TextfieldRepresentable.swift */; };
+		59AF820B2B0EF6640031FD3C /* DetailsInSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AF820A2B0EF6640031FD3C /* DetailsInSwiftUI.swift */; };
+		59AF820D2B0EFC140031FD3C /* DetailViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AF820C2B0EFC140031FD3C /* DetailViewRepresentable.swift */; };
+		59AF820F2B0F05EB0031FD3C /* SecondSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AF820E2B0F05EB0031FD3C /* SecondSwiftUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		59AF81E22B0DAA900031FD3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59AF81E52B0DAA900031FD3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59AF81E72B0DAA900031FD3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59AF81FF2B0DC50D0031FD3C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		59AF82062B0E7C720031FD3C /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		59AF82082B0E7DF50031FD3C /* TextfieldRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldRepresentable.swift; sourceTree = "<group>"; };
+		59AF820A2B0EF6640031FD3C /* DetailsInSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInSwiftUI.swift; sourceTree = "<group>"; };
+		59AF820C2B0EFC140031FD3C /* DetailViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewRepresentable.swift; sourceTree = "<group>"; };
+		59AF820E2B0F05EB0031FD3C /* SecondSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSwiftUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +70,43 @@
 			children = (
 				59AF81D92B0DAA8D0031FD3C /* AppDelegate.swift */,
 				59AF81DB2B0DAA8D0031FD3C /* SceneDelegate.swift */,
-				59AF81DD2B0DAA8D0031FD3C /* ViewController.swift */,
 				59AF81DF2B0DAA8D0031FD3C /* Main.storyboard */,
+				59AF822E2B10856D0031FD3C /* Representables */,
+				59AF82032B0DC7AE0031FD3C /* UIkit */,
+				59AF82022B0DC78D0031FD3C /* swiftUI */,
 				59AF81E22B0DAA900031FD3C /* Assets.xcassets */,
 				59AF81E42B0DAA900031FD3C /* LaunchScreen.storyboard */,
 				59AF81E72B0DAA900031FD3C /* Info.plist */,
 			);
 			path = sample1;
+			sourceTree = "<group>";
+		};
+		59AF82022B0DC78D0031FD3C /* swiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				59AF82062B0E7C720031FD3C /* HomeScreen.swift */,
+				59AF820A2B0EF6640031FD3C /* DetailsInSwiftUI.swift */,
+				59AF820E2B0F05EB0031FD3C /* SecondSwiftUI.swift */,
+			);
+			path = swiftUI;
+			sourceTree = "<group>";
+		};
+		59AF82032B0DC7AE0031FD3C /* UIkit */ = {
+			isa = PBXGroup;
+			children = (
+				59AF81DD2B0DAA8D0031FD3C /* ViewController.swift */,
+				59AF81FF2B0DC50D0031FD3C /* DetailViewController.swift */,
+			);
+			path = UIkit;
+			sourceTree = "<group>";
+		};
+		59AF822E2B10856D0031FD3C /* Representables */ = {
+			isa = PBXGroup;
+			children = (
+				59AF82082B0E7DF50031FD3C /* TextfieldRepresentable.swift */,
+				59AF820C2B0EFC140031FD3C /* DetailViewRepresentable.swift */,
+			);
+			path = Representables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59AF82002B0DC50D0031FD3C /* DetailViewController.swift in Sources */,
+				59AF820B2B0EF6640031FD3C /* DetailsInSwiftUI.swift in Sources */,
 				59AF81DE2B0DAA8D0031FD3C /* ViewController.swift in Sources */,
+				59AF820F2B0F05EB0031FD3C /* SecondSwiftUI.swift in Sources */,
+				59AF82072B0E7C720031FD3C /* HomeScreen.swift in Sources */,
+				59AF82092B0E7DF50031FD3C /* TextfieldRepresentable.swift in Sources */,
 				59AF81DA2B0DAA8D0031FD3C /* AppDelegate.swift in Sources */,
 				59AF81DC2B0DAA8D0031FD3C /* SceneDelegate.swift in Sources */,
+				59AF820D2B0EFC140031FD3C /* DetailViewRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
